@@ -4835,11 +4835,6 @@
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="width" val="12"/>
     </comp>
-    <comp lib="0" loc="(190,120)" name="Tunnel">
-      <a name="label" val="FRAME_IN"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-      <a name="width" val="12"/>
-    </comp>
     <comp lib="0" loc="(190,160)" name="Tunnel">
       <a name="label" val="ENQUEUE"/>
       <a name="labelfont" val="SansSerif bold 12"/>
