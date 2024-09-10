@@ -3986,7 +3986,7 @@
     <a name="appearance" val="custom"/>
     <a name="circuit" val="VPWBController"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="32.0"/>
+    <a name="simulationFrequency" val="256000.0"/>
     <appear>
       <polyline fill="none" points="155,189 160,179 166,190" stroke="#808080"/>
       <rect fill="none" height="140" stroke="#000000" stroke-width="2" width="200" x="60" y="50"/>
@@ -4022,12 +4022,22 @@
       <circ-port dir="out" pin="150,270" x="50" y="180"/>
       <circ-port dir="out" pin="390,60" x="270" y="60"/>
     </appear>
+    <comp lib="0" loc="(1120,600)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="DATAOUT"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+      <a name="width" val="12"/>
+    </comp>
     <comp lib="0" loc="(1240,690)" name="Constant">
       <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(1280,690)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(1430,600)" name="Tunnel">
+      <a name="label" val="SER_IN"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
     <comp lib="0" loc="(150,120)" name="Pin">
@@ -4110,6 +4120,17 @@
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
+    <comp lib="0" loc="(250,600)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="DATAIN"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+      <a name="width" val="12"/>
+    </comp>
+    <comp lib="0" loc="(250,630)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="W"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
     <comp lib="0" loc="(370,60)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="SER_OUT"/>
@@ -4141,10 +4162,20 @@
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
+    <comp lib="0" loc="(570,600)" name="Tunnel">
+      <a name="label" val="SER_OUT"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(580,630)" name="Tunnel">
+      <a name="label" val="SER_IN"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
     <comp loc="(1390,600)" name="VPWBRX"/>
     <comp loc="(540,600)" name="VPWBTX"/>
+    <wire from="(1120,600)" to="(1170,600)"/>
     <wire from="(1240,670)" to="(1240,690)"/>
     <wire from="(1280,670)" to="(1280,690)"/>
+    <wire from="(1390,600)" to="(1430,600)"/>
     <wire from="(150,120)" to="(160,120)"/>
     <wire from="(150,150)" to="(160,150)"/>
     <wire from="(150,180)" to="(160,180)"/>
@@ -4153,10 +4184,18 @@
     <wire from="(150,60)" to="(160,60)"/>
     <wire from="(150,90)" to="(160,90)"/>
     <wire from="(240,320)" to="(240,330)"/>
+    <wire from="(250,600)" to="(320,600)"/>
+    <wire from="(250,630)" to="(270,630)"/>
+    <wire from="(270,620)" to="(270,630)"/>
+    <wire from="(270,620)" to="(320,620)"/>
     <wire from="(370,60)" to="(390,60)"/>
     <wire from="(370,90)" to="(390,90)"/>
     <wire from="(390,670)" to="(390,690)"/>
     <wire from="(430,670)" to="(430,700)"/>
+    <wire from="(540,600)" to="(570,600)"/>
+    <wire from="(540,620)" to="(560,620)"/>
+    <wire from="(560,620)" to="(560,630)"/>
+    <wire from="(560,630)" to="(580,630)"/>
   </circuit>
   <circuit name="VPWBTX">
     <a name="appearance" val="custom"/>
