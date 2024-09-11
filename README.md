@@ -1,13 +1,13 @@
 # Project 4 README
 
-Student 1: Full Zachary Willson (922725803)
-Student 2: Full Qihan Guan (123456798)
+Student 1: Zachary Willson (922725803)
+Student 2: Qihan Guan [WITHDRAWN]
 
 ## Project Status
-BRX is tested to succesffuly recieve frames. As such the observer, SRI, and FQ are confirmed working as intended. BTX is currently being implemented. 
+Controller is completed and tested to successfuly SEND/RECIEVE full frames via in-module pins. Frame-transfer confirms the correct functionality of all subsequent subcircuit dependancies: OBSERVER, ARBITER, SRO, SRI, FRAMEQUEUE, BRX, and BTX. Project is submitted without Extra Credit funcitonality within the Controller. 
 
 ## Known Issues
-No known issues so far. 
+No known issues so far, though Controller functionality may have misinterpreted functionality from project description. 
 
 ## References
 
@@ -22,10 +22,10 @@ No known issues so far.
 
 
 ### Prompt 2
-My other prompt...
+
 
 ### Response 2
-The other response...
+
 
 ### Changes 2
-The other changes made...
+
